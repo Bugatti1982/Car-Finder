@@ -1,4 +1,4 @@
-![Car Selection Database](https://github.com/Bugatti1982/Car-Finder/blob/main/car-selection-database.png?raw=true)
+
 
 # Car Finder
 
@@ -20,6 +20,16 @@ As a user, I want to search for cars by specific criteria such as make, model, p
 - Once a car is selected, the user can add it to a shopping cart for purchase.
 
 ## Project Setup
+
+![Car Selection Database](Assets/diagram-export-10-2-2024-9_05_09-pm_720.png)
+
+* Cars
+  * id: Name String
+  * make: id name string
+  * Model: id name string
+  * Year: id year int
+  * Price: id amount decimal
+
 
 ### Frontend Details
 
