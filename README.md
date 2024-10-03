@@ -1,55 +1,82 @@
+![Car Selection Database](https://github.com/Bugatti1982/Car-Finder/blob/main/car-selection-database.png?raw=true)
+
 # Car Finder
 
-* Repo for Make Model of Cars and with the price determinate. 
+A repository for finding car make, model, and price with purchasing functionality. This project includes two primary APIs: one for vehicle data retrieval and another for shopping cart management.
 
-* API 1 Make, Model and Price of car
+## Features
 
-* API 2 Shopping cart 
+- **API 1:** Provides the make, model, and price of vehicles.
+- **API 2:** Handles shopping cart functionality for purchasing cars.
 
-# User story
+## User Story
 
-As a user I want to be able to look up a car and find a price and purchase the vehicle.
+As a user, I want to search for cars by specific criteria such as make, model, price, and year, compare different vehicles, and purchase a selected vehicle using a shopping cart.
 
-# Acceptence Criteria
+## Acceptance Criteria
 
-* The user should be given a prompt to ask what type of vehicle, price point, make, model, year.
+- The system should prompt the user for details such as vehicle type, price range, make, model, and year.
+- The user should be able to view and compare vehicles in a structured table format.
+- Once a car is selected, the user can add it to a shopping cart for purchase.
 
-* The user should be able to compare vehicles in a given table.
+## Project Setup
 
-* When I choose to add a car I can purchase it in the shopping cart.
+### Frontend Details
 
-## Getting Started On Project
-Front end details
+The front end will provide the user interface for vehicle search, comparison, and shopping cart management.
 
-Back End Details will handle the same as front end details.
+### Backend Details
 
-# Description
+The backend will manage vehicle data retrieval and process transactions, similar to the front-end functionality but focused on API calls and data handling.
 
-# Required Modules
+## Project Description
 
-Postgres SQL
-Node
+Car Finder enables users to easily search for vehicles, compare them side-by-side, and complete a purchase, all in one seamless experience.
 
+### Required Modules
 
-# Table of Contents
+- **PostgreSQL** - For managing the car database and storing vehicle and user information.
+- **Node.js** - For server-side API development.
 
-# Installation
+## Table of Contents
 
-# Video Demonstration
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Testing](#testing)
+4. [Contributing](#contributing)
+5. [Questions](#questions)
 
-# Usage
+## Installation
 
-# Testing
+1. Clone the repository:  
+   `git clone https://github.com/Bugatti1982/Car-Finder`
+2. Install dependencies:  
+   `npm install`
+3. Set up the PostgreSQL database using the provided schema.
+4. Run the application:  
+   `npm start`
 
-Not currently set up
+## Video Demonstration
 
-# Contributing Resources
+_A video demonstration link will be added here once the project is fully implemented._
 
-[Product Price Comparison](https://stackoverflow.com/questions/19841022/product-price-comparison-in-sql)
+## Usage
 
-[Price Comparison Table in HTML and CSS](https://www.youtube.com/watch?v=Ki2HbIMZTgg)
+After installation, launch the app to search for vehicles, compare them, and add your preferred vehicle to the shopping cart for purchase.
 
+## Testing
 
+Testing functionality is not currently implemented. Future updates will include testing configurations.
 
-# Questions
+## Contributing
 
+Contributions are welcome! If you’d like to contribute, feel free to create a pull request or check out the issues section.
+
+### Resources
+
+- [Product Price Comparison in SQL](https://stackoverflow.com/questions/19841022/product-price-comparison-in-sql)
+- [HTML & CSS Price Comparison Table Tutorial](https://www.youtube.com/watch?v=Ki2HbIMZTgg)
+
+## Questions
+
+For questions or further assistance, feel free to reach out via GitHub or raise an issue in the repository.
