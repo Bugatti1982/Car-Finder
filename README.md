@@ -50,11 +50,11 @@ Car Finder enables users to easily search for vehicles, compare them side-by-sid
 
 ## Table of Contents
 
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Testing](#testing)
-4. [Contributing](#contributing)
-5. [Questions](#questions)
+ [Installation](#installation)
+ [Usage](#usage)
+ [Testing](#testing)
+ [Contributing](#contributing)
+ [Questions](#questions)
 
 ## Installation
 
@@ -72,7 +72,7 @@ _A video demonstration link will be added here once the project is fully impleme
 
 ## Usage
 
-After installation, launch the app to search for vehicles, compare them, and add your preferred vehicle to the shopping cart for purchase.
+After installation, launch the app to search for vehicles, compare them and add your preferred vehicle to the shopping cart for purchase.
 
 ## Testing
 
