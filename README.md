@@ -98,6 +98,7 @@ Marcellus Khanyoo-Moona
 
 - [Product Price Comparison in SQL](https://stackoverflow.com/questions/19841022/product-price-comparison-in-sql)
 - [HTML & CSS Price Comparison Table Tutorial](https://www.youtube.com/watch?v=Ki2HbIMZTgg)
+- [Learn Express JS in 35 minutes](https://www.youtube.com/watch?v=SccSCuHhOw0)
 
 ## Questions
 
