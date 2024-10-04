@@ -50,15 +50,15 @@ Car Finder enables users to easily search for vehicles, compare them side-by-sid
 
 ## Table of Contents
 
- -[Installation](#installation)
+ [Installation](#installation)
  
- -[Usage](#usage)
+ [Usage](#usage)
  
- -[Testing](#testing)
+ [Testing](#testing)
  
- -[Contributing](#contributing)
+ [Contributing](#contributing)
  
- -[Questions](#questions)
+ [Questions](#questions)
 
 ## Installation
 
