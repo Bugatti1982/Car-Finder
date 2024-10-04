@@ -50,15 +50,11 @@ Car Finder enables users to easily search for vehicles, compare them side-by-sid
 
 ## Table of Contents
 
- [Installation](#installation)
- 
- [Usage](#usage)
- 
- [Testing](#testing)
- 
- [Contributing](#contributing)
- 
- [Questions](#questions)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - Testing](#testing)
+ - [Contributing](#contributing)
+ - [Questions](#questions)
 
 ## Installation
 
@@ -82,9 +78,21 @@ After installation, launch the app to search for vehicles, compare them and add 
 
 Testing functionality is not currently implemented. Future updates will include testing configurations.
 
-## Contributing
+## Contributors
 
-Contributions are welcome! If you’d like to contribute, feel free to create a pull request or check out the issues section.
+Bee Vang
+
+Rachel Reyes
+
+Brandon Welch
+
+Mattison Anderson
+
+Brandi Rasmussen
+
+Marcellus Khanyoo-Moona
+
+
 
 ### Resources
 
