@@ -113,30 +113,43 @@ For questions or further assistance, feel free to reach out via GitHub or raise 
 Meeting Notes from Oct 5
 
 Rachel is working on SQL & Scheema
+
 	* We need to look at if we should create a database from scratch or just use the database that we    
      pulled
+
 	* Is it more time efficient?
+
 	* We are asking Chat GPT and Nate their options on it
 
 API
 Brandon is working on Routing
+
 	* He is doing research and BEE and Rachel are working with him in support
+
 	* We are trying to figure out what we need to do on this currently to support Brandon
 
 Bee has updated the Front end and we have a good Outline and look for website
    * Bee will lead with the the front end of the site. 
+
 	* Bee and Brandi are going to sit down and discuss the vision of the site on Monday Oct 7.
+
 	* Brandi will go in and write up the Markdown for the site as Bee explains what he has done.
+
 	* Bee will supervise the technical aspect and review code and lean in when necessary.
 	
 Brandi is going to do Production supervision
+
 	* Brandi work on front end with Bee
+
 	* Brandi will lean in and write markdown
+
 	* Brandi will assist with Bee on the vision and look of website as well as the development of the
      front end stuff
+
    * Brandi will also be taking production notes to keep us on task and have a good timeline
+
    * Brandi will also look at how to keep things effient so that we don't get lost in the minutia.
-   * 
+   
 
 Marcellus will meet with us on Sunday Oct 6 10:00am to discuss assigned tasks we will assign his tasks at that time.
 
