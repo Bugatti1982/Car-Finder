@@ -122,6 +122,7 @@ Rachel is working on SQL & Scheema
 	* We are asking Chat GPT and Nate their options on it
 
 API
+
 Brandon is working on Routing
 
 	* He is doing research and BEE and Rachel are working with him in support
@@ -129,6 +130,7 @@ Brandon is working on Routing
 	* We are trying to figure out what we need to do on this currently to support Brandon
 
 Bee has updated the Front end and we have a good Outline and look for website
+
    * Bee will lead with the the front end of the site. 
 
 	* Bee and Brandi are going to sit down and discuss the vision of the site on Monday Oct 7.
@@ -143,8 +145,7 @@ Brandi is going to do Production supervision
 
 	* Brandi will lean in and write markdown
 
-	* Brandi will assist with Bee on the vision and look of website as well as the development of the
-     front end stuff
+	* Brandi will assist with Bee on the vision and front end
 
    * Brandi will also be taking production notes to keep us on task and have a good timeline
 
