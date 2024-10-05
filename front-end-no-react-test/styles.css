@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: 'Orbitron', sans-serif; /* Set a professional font */
+    height: 100vh; /* Full height of viewport */
+    display: flex;
+    flex-direction: column;
+    background: url('bg.png') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the entire container */
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker background for header */
+    color: #00ffcc; /* Neon green color */
+    padding: 10px 0; /* Reduced padding for a sleek look */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    width: 100%; /* Full width */
+    z-index: 10; /* Layer above other content */
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link {
+    color: #00ffcc !important; /* Neon green links */
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* Changed to white for better visibility */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Frame Styles */
+.frame {
+    background-color: rgba(20, 20, 20, 0.85); /* Darker semi-transparent background for readability */
+    border: 2px solid rgba(0, 255, 204, 0.6); /* Neon border */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 255, 204, 0.5);
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.frame:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    border-color: #ff00ff; /* Change border on hover */
+}
+
+/* Small Frame Styles */
+.small-frame {
+    backdrop-filter: blur(10px);
+}
+
+/* Search Bar Styles */
+.search-bar {
+    margin-bottom: 15px;
+}
+
+/* Input Styles */
+input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.1); /* Darker semi-transparent input background */
+    color: #ffffff; /* White text color */
+}
+
+/* Button Styles */
+button {
+    background-color: #ff00ff; /* Neon pink button */
+    color: white;
+}
+
+button:hover {
+    background-color: #00ffcc; /* Neon green hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker semi-transparent background */
+    color: #00ffcc; /* Neon green footer text */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Text Styles */
+h5 {
+    color: #ffffff; /* White headings for better readability */
+}
+
+p {
+    color: #ffffff; /* White paragraphs for better readability */
+}
