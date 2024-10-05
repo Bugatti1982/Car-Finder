@@ -13,6 +13,18 @@ A repository for finding car make, model, and price with purchasing functionalit
 
 As a user, I want to search for cars by specific criteria such as make, model, price, and year, compare different vehicles, and purchase a selected vehicle using a shopping cart.
 
+## Table of Contents
+
+ - [User Story](https://github.com/Bugatti1982/Car-Finder?tab=readme-ov-file#user-story)
+ - [Project Setup](https://github.com/Bugatti1982/Car-Finder?tab=readme-ov-file#project-setup)
+ - [Project Description](https://github.com/Bugatti1982/Car-Finder?tab=readme-ov-file#project-description)
+ - [Required Modules](https://github.com/Bugatti1982/Car-Finder?tab=readme-ov-file#required-modules)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Testing](#testing)
+ - [Contributing](#contributing)
+ - [Questions](#questions)
+
 ## Acceptance Criteria
 
 - The system should prompt the user for details such as vehicle type, price range, make, model, and year.
@@ -48,13 +60,7 @@ Car Finder enables users to easily search for vehicles, compare them side-by-sid
 - **PostgreSQL** - For managing the car database and storing vehicle and user information.
 - **Node.js** - For server-side API development.
 
-## Table of Contents
 
- - [Installation](#installation)
- - [Usage](#usage)
- - [Testing](#testing)
- - [Contributing](#contributing)
- - [Questions](#questions)
 
 ## Installation
 
@@ -125,31 +131,31 @@ API
 
 Brandon is working on Routing
 
-	* He is doing research and BEE and Rachel are working with him in support
+* He is doing research and BEE and Rachel are working with him in support
 
-	* We are trying to figure out what we need to do on this currently to support Brandon
+* We are trying to figure out what we need to do on this currently to support Brandon
 
 Bee has updated the Front end and we have a good Outline and look for website
 
-   * Bee will lead with the the front end of the site. 
+* Bee will lead with the the front end of the site. 
 
-	* Bee and Brandi are going to sit down and discuss the vision of the site on Monday Oct 7.
+* Bee and Brandi are going to sit down and discuss the vision of the site on Monday Oct 7.
 
-	* Brandi will go in and write up the Markdown for the site as Bee explains what he has done.
+* Bee will explain the code and ideas behind it.
 
-	* Bee will supervise the technical aspect and review code and lean in when necessary.
+* Bee will supervise the technical aspect and review code and lean in when necessary.
 	
 Brandi is going to do Production supervision
 
-	* Brandi work on front end with Bee
+* Brandi work on front end with Bee
 
-	* Brandi will lean in and write markdown
+* Brandi will lean in and write markdown
 
-	* Brandi will assist with Bee on the vision and front end
+* Brandi will assist with Bee on the vision and front end
 
-   * Brandi will also be taking production notes to keep us on task and have a good timeline
+* Brandi will also be taking production notes to keep us on task and have a good timeline
 
-   * Brandi will also look at how to keep things effient so that we don't get lost in the minutia.
+* Brandi will also look at how to keep things effient so that we don't get lost in the minutia.
    
 
 Marcellus will meet with us on Sunday Oct 6 10:00am to discuss assigned tasks we will assign his tasks at that time.
