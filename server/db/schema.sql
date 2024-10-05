@@ -1,3 +1,7 @@
 DROP SCHEMA IF EXISTS carFinder_db;
 
 CREATE SCHEMA carFinder_db;
+
+CREATE TABLE car (
+    id INTEGER NOT NULL
+)
