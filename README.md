@@ -108,6 +108,7 @@ Marcellus Khanyoo-Moona
 - [HTML & CSS Price Comparison Table Tutorial](https://www.youtube.com/watch?v=Ki2HbIMZTgg)
 - [Learn Express JS in 35 minutes](https://www.youtube.com/watch?v=SccSCuHhOw0)
 - [Setup React with Vite](https://dev.to/mcbarna/setup-react-with-vite-on-vscode-a-step-by-step-tutorial-591g)
+- [React Tutorial #8](https://www.youtube.com/watch?v=XrtZynBLpXo)
 
 ## Questions
 
