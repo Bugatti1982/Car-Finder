@@ -13,6 +13,18 @@ A repository for finding car make, model, and price with purchasing functionalit
 
 As a user, I want to search for cars by specific criteria such as make, model, price, and year, compare different vehicles, and purchase a selected vehicle using a shopping cart.
 
+## Table of Contents
+
+ - [User Story](https://github.com/Bugatti1982/Car-Finder?tab=readme-ov-file#user-story)
+ - [Project Setup](https://github.com/Bugatti1982/Car-Finder?tab=readme-ov-file#project-setup)
+ - [Project Description](https://github.com/Bugatti1982/Car-Finder?tab=readme-ov-file#project-description)
+ - [Required Modules](https://github.com/Bugatti1982/Car-Finder?tab=readme-ov-file#required-modules)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Testing](#testing)
+ - [Contributing](#contributing)
+ - [Questions](#questions)
+
 ## Acceptance Criteria
 
 - The system should prompt the user for details such as vehicle type, price range, make, model, and year.
@@ -48,13 +60,7 @@ Car Finder enables users to easily search for vehicles, compare them side-by-sid
 - **PostgreSQL** - For managing the car database and storing vehicle and user information.
 - **Node.js** - For server-side API development.
 
-## Table of Contents
 
- - [Installation](#installation)
- - [Usage](#usage)
- - [Testing](#testing)
- - [Contributing](#contributing)
- - [Questions](#questions)
 
 ## Installation
 
@@ -101,7 +107,59 @@ Marcellus Khanyoo-Moona
 - [Product Price Comparison in SQL](https://stackoverflow.com/questions/19841022/product-price-comparison-in-sql)
 - [HTML & CSS Price Comparison Table Tutorial](https://www.youtube.com/watch?v=Ki2HbIMZTgg)
 - [Learn Express JS in 35 minutes](https://www.youtube.com/watch?v=SccSCuHhOw0)
+- [Setup React with Vite](https://dev.to/mcbarna/setup-react-with-vite-on-vscode-a-step-by-step-tutorial-591g)
+- [React Tutorial #8](https://www.youtube.com/watch?v=XrtZynBLpXo)
 
 ## Questions
 
 For questions or further assistance, feel free to reach out via GitHub or raise an issue in the repository.
+
+
+### Production Notes from Meetings
+
+Meeting Notes from Oct 5
+
+Rachel is working on SQL & Scheema
+
+	* We need to look at if we should create a database from scratch or just use the database that we    
+     pulled
+
+	* Is it more time efficient?
+
+	* We are asking Chat GPT and Nate their options on it
+
+API
+
+Brandon is working on Routing
+
+* He is doing research and BEE and Rachel are working with him in support
+
+* We are trying to figure out what we need to do on this currently to support Brandon
+
+Bee has updated the Front end and we have a good Outline and look for website
+
+* Bee will lead with the the front end of the site. 
+
+* Bee and Brandi are going to sit down and discuss the vision of the site on Monday Oct 7.
+
+* Bee will explain the code and ideas behind it.
+
+* Bee will supervise the technical aspect and review code and lean in when necessary.
+	
+Brandi is going to do Production supervision
+
+* Brandi work on front end with Bee
+
+* Brandi will lean in and write markdown
+
+* Brandi will assist with Bee on the vision and front end
+
+* Brandi will also be taking production notes to keep us on task and have a good timeline
+
+* Brandi will also look at how to keep things effient so that we don't get lost in the minutia.
+   
+
+Marcellus will meet with us on Sunday Oct 6 10:00am to discuss assigned tasks we will assign his tasks at that time.
+
+Mattison has not contacted us yet on a time he can meet so we can discuss his tasks.
+
