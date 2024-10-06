@@ -1,10 +1,10 @@
 import { Router } from 'express';
+import { CarRouter } from './car-routes.js';
+import { workRouter } from './work-car.js';
+
 const router = Router();
 
-import parkRoutes from './parkRoutes.js';
-import historyRoutes from './historyRoutes.js';
-
-router.use('/parks', parkRoutes);
-router.use('/history', historyRoutes);
+router.use('/Cars', CarRouter);
+router.use('/works', workRouter);
 
 export default router;

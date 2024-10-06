@@ -1,3 +1,5 @@
-DROP SCHEMA IF EXISTS carFinder_db;
+-- DROP DATABASE
+DROP DATABASE IF EXISTS volunteer_db;
 
-CREATE SCHEMA carFinder_db;
+-- CREATE DATABASE
+CREATE DATABASE volunteer_db;
