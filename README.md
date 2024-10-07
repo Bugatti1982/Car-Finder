@@ -1,107 +1,50 @@
+# React + TypeScript + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Car Finder
+Currently, two official plugins are available:
 
-A repository for finding car make, model, and price with purchasing functionality. This project includes two primary APIs: one for vehicle data retrieval and another for shopping cart management.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Features
+## Expanding the ESLint configuration
 
-- **API 1:** Provides the make, model, and price of vehicles.
-- **API 2:** Handles shopping cart functionality for purchasing cars.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## User Story
+- Configure the top-level `parserOptions` property like this:
 
-As a user, I want to search for cars by specific criteria such as make, model, price, and year, compare different vehicles, and purchase a selected vehicle using a shopping cart.
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-## Acceptance Criteria
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-- The system should prompt the user for details such as vehicle type, price range, make, model, and year.
-- The user should be able to view and compare vehicles in a structured table format.
-- Once a car is selected, the user can add it to a shopping cart for purchase.
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-## Project Setup
-
-![Car Selection Database](Assets/diagram-export-10-2-2024-9_05_09-pm_720.png)
-
-* Cars
-  * id: Name String
-  * make: id name string
-  * Model: id name string
-  * Year: id year int
-  * Price: id amount decimal
-
-
-### Frontend Details
-
-The front end will provide the user interface for vehicle search, comparison, and shopping cart management.
-
-### Backend Details
-
-The backend will manage vehicle data retrieval and process transactions, similar to the front-end functionality but focused on API calls and data handling.
-
-## Project Description
-
-Car Finder enables users to easily search for vehicles, compare them side-by-side, and complete a purchase, all in one seamless experience.
-
-### Required Modules
-
-- **PostgreSQL** - For managing the car database and storing vehicle and user information.
-- **Node.js** - For server-side API development.
-
-## Table of Contents
-
- - [Installation](#installation)
- - [Usage](#usage)
- - [Testing](#testing)
- - [Contributing](#contributing)
- - [Questions](#questions)
-
-## Installation
-
-1. Clone the repository:  
-   `git clone https://github.com/Bugatti1982/Car-Finder`
-2. Install dependencies:  
-   `npm install`
-3. Set up the PostgreSQL database using the provided schema.
-4. Run the application:  
-   `npm start`
-
-## Video Demonstration
-
-_A video demonstration link will be added here once the project is fully implemented._
-
-## Usage
-
-After installation, launch the app to search for vehicles, compare them and add your preferred vehicle to the shopping cart for purchase.
-
-## Testing
-
-Testing functionality is not currently implemented. Future updates will include testing configurations.
-
-## Contributors
-
-Bee Vang
-
-Rachel Reyes
-
-Brandon Welch
-
-Mattison Anderson
-
-Brandi Rasmussen
-
-Marcellus Khanyoo-Moona
-
-
-
-### Resources
-
-- [Markdown Editor](https://stackedit.io/)
-- [AI co-pilot ‍for technical design](https://eraser.io)
-- [Product Price Comparison in SQL](https://stackoverflow.com/questions/19841022/product-price-comparison-in-sql)
-- [HTML & CSS Price Comparison Table Tutorial](https://www.youtube.com/watch?v=Ki2HbIMZTgg)
-- [Learn Express JS in 35 minutes](https://www.youtube.com/watch?v=SccSCuHhOw0)
-
-## Questions
-
-For questions or further assistance, feel free to reach out via GitHub or raise an issue in the repository.
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
