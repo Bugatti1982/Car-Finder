@@ -117,16 +117,16 @@ For questions or further assistance, feel free to reach out via GitHub or raise 
 
 ### Production Notes from Meetings
 
-Meeting Notes from Oct 5
+### Meeting Notes from Oct 5, 2024
 
 Rachel is working on SQL & Scheema
 
-	* We need to look at if we should create a database from scratch or just use the database that we    
+* We need to look at if we should create a database from scratch or just use the database that we    
      pulled
 
-	* Is it more time efficient?
+* Is it more time efficient?
 
-	* We are asking Chat GPT and Nate their options on it
+* We are asking Chat GPT and Nate their options on it
 
 API
 
@@ -162,4 +162,8 @@ Brandi is going to do Production supervision
 Marcellus will meet with us on Sunday Oct 6 10:00am to discuss assigned tasks we will assign his tasks at that time.
 
 Mattison has not contacted us yet on a time he can meet so we can discuss his tasks.
+
+### Meeting Notes Oct 6, 2024
+
+Brandon and Nate got our server connected
 
