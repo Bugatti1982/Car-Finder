@@ -109,8 +109,8 @@ Marcellus Khanyoo-Moona
 - [Learn Express JS in 35 minutes](https://www.youtube.com/watch?v=SccSCuHhOw0)
 - [Setup React with Vite](https://dev.to/mcbarna/setup-react-with-vite-on-vscode-a-step-by-step-tutorial-591g)
 - [React Tutorial #8](https://www.youtube.com/watch?v=XrtZynBLpXo)
--[Creating Databases on pgAdmin](https://www.youtube.com/watch?v=6DzCWzeVFD0)
--[The Rest API Handbook](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
+- [Creating Databases on pgAdmin](https://www.youtube.com/watch?v=6DzCWzeVFD0)
+- [The Rest API Handbook](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
 
 
 ## Questions
