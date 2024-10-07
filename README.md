@@ -109,6 +109,9 @@ Marcellus Khanyoo-Moona
 - [Learn Express JS in 35 minutes](https://www.youtube.com/watch?v=SccSCuHhOw0)
 - [Setup React with Vite](https://dev.to/mcbarna/setup-react-with-vite-on-vscode-a-step-by-step-tutorial-591g)
 - [React Tutorial #8](https://www.youtube.com/watch?v=XrtZynBLpXo)
+-[Creating Databases on pgAdmin](https://www.youtube.com/watch?v=6DzCWzeVFD0)
+-[The Rest API Handbook](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
+
 
 ## Questions
 
@@ -121,8 +124,7 @@ For questions or further assistance, feel free to reach out via GitHub or raise 
 
 Rachel is working on SQL & Scheema
 
-* We need to look at if we should create a database from scratch or just use the database that we    
-     pulled
+* We need to look at if we should create a database from scratch or just use the database that we pulled
 
 * Is it more time efficient?
 
@@ -165,5 +167,11 @@ Mattison has not contacted us yet on a time he can meet so we can discuss his ta
 
 ### Meeting Notes Oct 6, 2024
 
-Brandon and Nate got our server connected
+Brandon and Nate got our server connected 
+
+API is functioning
+
+### Meeting Notes Oct 7, 2024
+
+
 
