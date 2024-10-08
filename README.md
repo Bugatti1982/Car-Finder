@@ -135,6 +135,8 @@ Rachel is working on SQL & Scheema
 
 * We are asking Chat GPT and Nate their options on it
 
+* Rachel worked on power point presentation
+
 API
 
 Brandon is working on Routing
