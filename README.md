@@ -177,5 +177,26 @@ API is functioning
 
 ### Meeting Notes Oct 7, 2024
 
+Updated crew on the work done on Sunday
+* Brandon fixed the template and has it connected to his server.
 
+* Brandon demo'd the backend stuff
+
+* We went through the Server files and explained the connections. 
+
+* Brandi updated the README,  Resources and gave the rest of the crew the REACT tutorials.
+
+* Marcellus, Bee and Brandi are going to work on the REACT issue to get front end tied to back end but everyone is looking into this to help out.
+
+* Rachel is working on SQL Brandon will assist her on this challenge
+
+* Mattison and Marcellus are working on the voting system add on
+
+* We have basic functionality working
+
+* Brandi is going to do forensics and review the changes on the filenames so we can figure out what connects to what, so that we can connect our front to the back and will notate it out.
+
+* Agreed upon that there will be a meeting Tuesday Oct 8, 2024 7:00pm
+
+* The Crew watched the REACT Tutorials
 
