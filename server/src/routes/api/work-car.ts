@@ -84,6 +84,7 @@ router.post('/', async (req: Request, res: Response) => {
 });
 
 // PUT /works/:id - Update work by ID
+// Same as above, but this time we are updating the id
 router.put('/:id', async (req: Request, res: Response) => {
   const { id } = req.params;
   const { name, status, description, assignedCarId } = req.body;
