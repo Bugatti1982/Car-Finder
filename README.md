@@ -178,7 +178,8 @@ API is functioning
 
 ### Meeting Notes Oct 7, 2024
 
-Updated crew on the work done on Sunday
+* Updated crew on the work done on Sunday
+
 * Brandon fixed the template and has it connected to his server.
 
 * Brandon demo'd the backend stuff
@@ -197,7 +198,7 @@ Updated crew on the work done on Sunday
 
 * Brandi is going to do forensics and review the changes on the filenames so we can figure out what connects to what, so that we can connect our front to the back and will notate it out.
 
-* Agreed upon that there will be a meeting Tuesday Oct 8, 2024 7:00pm
+* Agreed upon that there will be a meeting Tuesday Oct 8, 2024 6:00pm
 
 * The Crew watched the REACT Tutorials
 
