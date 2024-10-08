@@ -80,6 +80,10 @@ _A video demonstration link will be added here once the project is fully impleme
 
 After installation, launch the app to search for vehicles, compare them and add your preferred vehicle to the shopping cart for purchase.
 
+* Npm Build
+* Npm Seed
+* Npm Start
+
 ## Testing
 
 Testing functionality is not currently implemented. Future updates will include testing configurations.
