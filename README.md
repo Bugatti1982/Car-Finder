@@ -115,6 +115,8 @@ Marcellus Khanyoo-Moona
 - [React Tutorial #8](https://www.youtube.com/watch?v=XrtZynBLpXo)
 - [Creating Databases on pgAdmin](https://www.youtube.com/watch?v=6DzCWzeVFD0)
 - [The Rest API Handbook](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+
 
 
 ## Questions
