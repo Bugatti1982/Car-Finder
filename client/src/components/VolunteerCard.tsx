@@ -1,10 +1,25 @@
+//++++++++++++ WE NEED TO RENAME THESE FILES TO MATCH THE CODE ++++++++++++++
+// imports from the client folder/interfaces/ApiMessage.tsx so we need to look at that file and what it connects to
+// Is this the One that we look to for renaming and copying from the server/src/models/car.ts file names?
+//
+
+
+// the link allows for navigation on website without page refresh
+//used for navigation on the website
 import { Link } from "react-router-dom";
+// imports from the client folder/interfaces folder/ApiMessage.tsx
+// used for typechecking api messages
 import {ApiMessage } from '../interfaces/ApiMessage'
+// imports from react for mouse events
+// used for typechecking mouse events
 import { MouseEventHandler } from "react";
 
 interface VolunteerCardProps {
+  // identifys the volunteer id
   id: number | null,
+  // identifys the volunteer name
   name: string | null,
+  // deletes the volunteer from the database
   deleteIndvVolunteer: (ticketId: number) => Promise<ApiMessage>
 }
 
