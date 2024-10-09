@@ -1,4 +1,6 @@
+// imports from the client folder/interfaces folder/WorkData.tsx
 import { WorkData } from "../interfaces/WorkData";
+// imports from the client folder/interfaces folder/ApiMessage.tsx
 import { ApiMessage } from "../interfaces/ApiMessage";
 
 const retrieveWorks = async () => {
