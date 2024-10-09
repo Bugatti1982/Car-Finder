@@ -116,6 +116,7 @@ Marcellus Khanyoo-Moona
 - [Creating Databases on pgAdmin](https://www.youtube.com/watch?v=6DzCWzeVFD0)
 - [The Rest API Handbook](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
 - [How to Create a Wire Frame](https://www.springboard.com/blog/design/how-to-create-a-wireframe/)
+- [Javascript for Kids](https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-for-Kids.pdf)
 
 
 ## Questions
