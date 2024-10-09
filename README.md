@@ -115,7 +115,7 @@ Marcellus Khanyoo-Moona
 - [React Tutorial #8](https://www.youtube.com/watch?v=XrtZynBLpXo)
 - [Creating Databases on pgAdmin](https://www.youtube.com/watch?v=6DzCWzeVFD0)
 - [The Rest API Handbook](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
-
+- [How to Create a Wire Frame](https://www.springboard.com/blog/design/how-to-create-a-wireframe/)
 
 
 ## Questions
