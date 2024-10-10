@@ -1,19 +1,12 @@
-// Code for rendering the app and routing
-// must install required packages
-// npm install react-router-dom
-// npm install @types/react-router-dom
-// npm install @types/react
-// must make sure tsconfig is configured correctly
-// created to handle client side routing
-//also imports CSS files and React components that are used as pages
-import ReactDOM from 'react-dom/client'
+// Import necessary dependencies
+import React from 'react';
+import ReactDOM from 'react-dom/client'; // Use for React 18+ rendering
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-// this function serves as main function and this also handles routing errors
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-// this is the default route renders the main page component
-import './index.css'
+// Import your CSS file for styling
+import './index.css';
 
-//other routes are defined in the children array they include paths like VolunteerPage, VolunteerForm, EditVolunteer, EditWork
+// Import React components used in the router
 import App from './App.tsx';
 import ErrorPage from './pages/ErrorPage.tsx';
 import MainPage from './pages/MainPage.tsx';
@@ -22,41 +15,45 @@ import VolunteerForm from './pages/VolunteerForm.tsx';
 import EditVolunteer from './pages/EditVolunteer.tsx';
 import EditWork from './pages/EditWork.tsx';
 
-// this passes the router to the router provider as a prop
-// the app uses defined routes to render the components based on current url
+// Create the router with all the routes and their corresponding components
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
+    path: '/', // Default route for the main page
+    element: <App />, // This will render the `App` component
+    errorElement: <ErrorPage />, // Handles routing errors
+    children: [ // Nested routes for different paths
       {
-        index: true,
+        index: true, // The default page when visiting `/`
         element: <MainPage />
       }, 
       {
-        path: '/show-volunteers',
+        path: 'show-volunteers', // URL path for the volunteer list page
         element: <VolunteerPage />
       },
       {
-        path: '/new-volunteer',
+        path: 'new-volunteer', // URL path for adding a new volunteer
         element: <VolunteerForm />
       },
       {
-        path: '/edit-volunteer',
+        path: 'edit-volunteer', // URL path for editing a volunteer
         element: <EditVolunteer />
       },
       {
-        path: '/edit-work',
+        path: 'edit-work', // URL path for editing work
         element: <EditWork />
       }
     ]
   }
 ]);
 
+// Find the root element in the HTML file
 const rootElement = document.getElementById('root');
-if(rootElement) {
+
+// Ensure that the root element exists before rendering
+if (rootElement) {
   ReactDOM.createRoot(rootElement).render(
-    <RouterProvider router={router} />
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
   );
 }
