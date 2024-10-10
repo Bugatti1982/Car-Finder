@@ -1,0 +1,106 @@
+* General Styles */
+body {
+    margin: 0; /* Remove default margin to ensure the body fills the viewport */
+    overflow-x: hidden; /* Prevent horizontal overflow for a cleaner look */
+    font-family: 'Orbitron', sans-serif; /* Set a modern, professional font for the entire document */
+    height: 100vh; /* Set body height to fill the full viewport height */
+    display: flex; /* Use flexbox layout for easy vertical alignment of child elements */
+    flex-direction: column; /* Stack child elements vertically */
+    background: url('bg.png') no-repeat center center; /* Set a background image, centered */
+    background-size: cover; /* Ensure the background image covers the entire body */
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(0, 0, 0, 0.9); /* Set a dark background with slight transparency for the header */
+    color: #00ffcc; /* Use a neon green color for the text in the header */
+    padding: 10px 0; /* Add vertical padding to create space around the header content */
+    position: fixed; /* Fix the header to the top of the viewport */
+    top: 0; /* Align the header to the top of the page */
+    width: 100%; /* Ensure the header takes the full width of the viewport */
+    z-index: 10; /* Keep the header above other content by setting a high z-index */
+}
+
+/* Navbar Styles */
+.navbar-nav .nav-link {
+    color: #00ffcc !important; /* Override default navbar link color to neon green */
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* Change brand color to white for better visibility against dark background */
+    font-size: 1.5rem; /* Set a larger font size for the brand name */
+    font-weight: bold; /* Make the brand name bold for emphasis */
+}
+
+/* Frame Styles */
+.frame {
+    background-color: rgba(20, 20, 20, 0.85); /* Darker semi-transparent background for readability */
+    border: 2px solid rgba(0, 255, 204, 0.6); /* Neon border for visual appeal */
+    border-radius: 10px; /* Round the corners of the frame */
+    box-shadow: 0 4px 20px rgba(0, 255, 204, 0.5); /* Add a soft shadow effect for depth */
+    padding: 15px; /* Add padding inside the frame for content spacing */
+    margin: 10px; /* Add margin around the frame to create space between elements */
+    transition: transform 0.3s; /* Smooth transition effect for transform changes */
+}
+
+.frame:hover {
+    transform: translateY(-3px); /* Lift effect on hover for an interactive feel */
+    border-color: #ff00ff; /* Change border color on hover for visual feedback */
+}
+
+/* Small Frame Styles */
+.small-frame {
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background behind the small frame */
+}
+
+/* Search Bar Styles */
+.search-bar {
+    margin-bottom: 15px; /* Add space below the search bar for separation from other elements */
+}
+
+/* Input Styles */
+input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.1); /* Set a semi-transparent background for the input */
+    color: #ffffff; /* Set text color to white for readability */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Add a subtle border to define the input area */
+    padding: 10px; /* Add padding inside the input for better user experience */
+    border-radius: 5px; /* Round the corners of the input field */
+}
+
+/* Button Styles */
+button {
+    background-color: #ce65ce !important; /* Set a solid color background for the button */
+    color: white; /* Set button text color to white */
+    font-weight: bold; /* Make the button text bold for emphasis */
+    border: none; /* Remove default button border for a cleaner look */
+    border-radius: 25px; /* Round the button corners for a modern appearance */
+    padding: 10px 20px; /* Add padding for a more substantial button size */
+    box-shadow: 0 4px 15px rgba(0, 255, 204, 0.5); /* Add a stylish shadow for depth */
+    cursor: pointer; /* Change cursor to pointer on hover for better UX */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for background and shadow changes */
+}
+
+button:hover {
+    background-color: #00ffcc !important; /* Change button background color on hover for visual feedback */
+    box-shadow: 0 6px 20px rgba(255, 0, 255, 0.7); /* Enhance shadow on hover for depth effect */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Set a dark background with slight transparency for the footer */
+    color: #00ffcc; /* Use neon green color for footer text */
+    text-align: center; /* Center the footer text */
+    padding: 20px; /* Add padding for space within the footer */
+    position: relative; /* Position relative for normal flow */
+    bottom: 0; /* Align footer to the bottom of the page */
+    width: 100%; /* Make the footer span the full width of the viewport */
+}
+
+/* Text Styles */
+h5 {
+    color: #ffffff; /* Use white color for headings for better visibility */
+}
+
+p {
+    color: #ffffff; /* Use white color for paragraphs for consistency and readability */
+}
