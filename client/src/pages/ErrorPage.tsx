@@ -1,3 +1,4 @@
+// throws out an error page if page not found
 const ErrorPage = () => {
   return (
     <section>

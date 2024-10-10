@@ -115,6 +115,8 @@ Marcellus Khanyoo-Moona
 - [React Tutorial #8](https://www.youtube.com/watch?v=XrtZynBLpXo)
 - [Creating Databases on pgAdmin](https://www.youtube.com/watch?v=6DzCWzeVFD0)
 - [The Rest API Handbook](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
+- [How to Create a Wire Frame](https://www.springboard.com/blog/design/how-to-create-a-wireframe/)
+- [Javascript for Kids](https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-for-Kids.pdf)
 
 
 ## Questions
@@ -133,6 +135,8 @@ Rachel is working on SQL & Scheema
 * Is it more time efficient?
 
 * We are asking Chat GPT and Nate their options on it
+
+* Rachel worked on power point presentation
 
 API
 
@@ -177,5 +181,27 @@ API is functioning
 
 ### Meeting Notes Oct 7, 2024
 
+* Updated crew on the work done on Sunday
 
+* Brandon fixed the template and has it connected to his server.
+
+* Brandon demo'd the backend stuff
+
+* We went through the Server files and explained the connections. 
+
+* Brandi updated the README,  Resources and gave the rest of the crew the REACT tutorials.
+
+* Marcellus, Bee and Brandi are going to work on the REACT issue to get front end tied to back end but everyone is looking into this to help out.
+
+* Rachel is working on SQL Brandon will assist her on this challenge
+
+* Mattison and Marcellus are working on the voting system add on
+
+* We have basic functionality working
+
+* Brandi is going to do forensics and review the changes on the filenames so we can figure out what connects to what, so that we can connect our front to the back and will notate it out.
+
+* Agreed upon that there will be a meeting Tuesday Oct 8, 2024 6:00pm
+
+* The Crew watched the REACT Tutorials
 
