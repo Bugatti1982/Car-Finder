@@ -215,5 +215,5 @@ API is functioning
 
 * Brandon is taking lead as consulting for all code on back end and will assist Mattison and Marcellus on Front end. He is also shooting a video so that we can add it to the usage area of the readme.
 
-* Brandi will continue mark down, get graphics on videos and video editing.
+* Brandi will continue mark down, get graphics on videos and video editing and analysis on the overall project to keep us on time.
 
