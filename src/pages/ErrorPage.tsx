@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/pages/ErrorPage.tsx
 // src/pages/ErrorPage.tsx
 import React from 'react';
 import { Box, Typography } from '@mui/material';
@@ -12,3 +13,16 @@ const ErrorPage: React.FC = () => {
 };
 
 export default ErrorPage;
+=======
+// throws out an error page if page not found
+const ErrorPage = () => {
+  return (
+    <section>
+      <h1>404: Page Not Found</h1>
+      <h1> ¯\_(ツ)_/¯</h1>
+    </section>
+  );
+};
+
+export default ErrorPage;
+>>>>>>> f0fb3fde482e6a9b817507767038f52966805dcc:client/src/pages/ErrorPage.tsx
