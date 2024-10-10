@@ -1,17 +1,29 @@
+# React + TypeScript + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-# Car Finder
+Currently, two official plugins are available:
 
-A repository for finding car make, model, and price with purchasing functionality. This project includes two primary APIs: one for vehicle data retrieval and another for shopping cart management.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Features
+## Expanding the ESLint configuration
 
-- **API 1:** Provides the make, model, and price of vehicles.
-- **API 2:** Handles shopping cart functionality for purchasing cars.
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## User Story
+- Configure the top-level `parserOptions` property like this:
 
-As a user, I want to search for cars by specific criteria such as make, model, price, and year, compare different vehicles, and purchase a selected vehicle using a shopping cart.
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
 ## Table of Contents
 
@@ -27,9 +39,9 @@ As a user, I want to search for cars by specific criteria such as make, model, p
 
 ## Acceptance Criteria
 
-- The system should prompt the user for details such as vehicle type, price range, make, model, and year.
-- The user should be able to view and compare vehicles in a structured table format.
-- Once a car is selected, the user can add it to a shopping cart for purchase.
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
 ## Project Setup
 
