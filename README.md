@@ -227,6 +227,6 @@ API is functioning
 
 * Rachel is working on Power Point and updating graphics
 
-* Brandi & Bee are meeting at 11:30 am for a design hudle
+* Brandi & Bee are meeting at 11:40 am for a design hudle
 
 * Brandon is leading tech consultant
