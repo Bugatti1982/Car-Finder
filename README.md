@@ -225,8 +225,8 @@ API is functioning
 
 * Mattison and Marcellus will have connection established and token inputed by Saturday.  
 
-* Rachel is working on Power Point and updating graphics
+* Rachel is working on Power Point and updating graphics. Power Point must have: Front End, Back End, Connection, Add On Video of Installation
 
 * Brandi & Bee are meeting at 11:40 am for a design hudle
 
-* Brandon is leading tech consultant
+* Brandon is leading tech consultant on back end to front end connection for Mattison and Marcellus
