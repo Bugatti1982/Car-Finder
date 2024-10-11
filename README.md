@@ -117,6 +117,8 @@ Marcellus Khanyoo-Moona
 - [The Rest API Handbook](https://www.freecodecamp.org/news/build-consume-and-document-a-rest-api/)
 - [How to Create a Wire Frame](https://www.springboard.com/blog/design/how-to-create-a-wireframe/)
 - [Javascript for Kids](https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-for-Kids.pdf)
+- [REACT TOKENS](https://www.youtube.com/watch?v=nI8PYZNFtac)
+- [REACT JWT](https://www.npmjs.com/package/react-jwt)
 
 
 ## Questions
