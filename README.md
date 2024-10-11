@@ -219,3 +219,14 @@ API is functioning
 
 * Brandi will continue mark down, get graphics on videos and video editing and analysis on the overall project to keep us on time.
 
+### Meeting Notes on Oct 10, 2024
+
+* We have front and back connected and working.
+
+* Mattison and Marcellus will have connection established and token inputed by Saturday.  
+
+* Rachel is working on Power Point and updating graphics
+
+* Brandi & Bee are meeting at 11:30 am for a design hudle
+
+* Brandon is leading tech consultant
