@@ -1,84 +1,78 @@
-// imports from react, react-router-dom, client/src/interfaces/WorkData.tsx, and client/src/api/workAPI.tsx
-import { useState, useEffect, MouseEventHandler } from "react";
-import { Link } from "react-router-dom";
-import { WorkData } from "../interfaces/WorkData";
-import { deleteWork, retrieveWorks } from "../api/workAPI";
+// src/pages/MainPage.tsx
+import React, { useState } from 'react';
+import { Box } from '@mui/material';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import LeftFrame from '../components/LeftFrame';
+import RightFrame from '../components/RightFrame';
 
-// the mainPage component is a functional component that uses react hooks to manage the state updates as needed to manage the state variables
-const MainPage = () => {
-  const [ workArray, setWorkArray ] = useState<WorkData[]>([]);
-  const [ dataCheck, setDataCheck ] = useState(true);
+// Sample data for demonstration purposes
+const sampleCars = [
+    { id: 1, name: 'Toyota Camry', image: '/images/test1.jpg', description: 'Reliable sedan with great fuel efficiency.' },
+    { id: 2, name: 'Honda Accord', image: '/images/test2.jpg', description: 'Spacious interior with advanced technology.' },
+    { id: 3, name: 'Tesla Model 3', image: '/images/test3.jpg', description: 'Electric vehicle with cutting-edge features.' }
+];
 
-  //fetchwork is an async function that retrieves the work data from the api and updates state
-  const fetchWork = async () => {
-    try {
-      const data = await retrieveWorks();
-      setWorkArray(data);
-    } catch (err) {
-      console.error('Failed to retrieve work:', err);
-    }
-  };
+const MainPage: React.FC = () => {
+    const [cars, setCars] = useState(sampleCars);
 
-  // monitors the dataCheck state variable and fetches the work data if the dataCheck is true
-  // runs when dataCheck changes
-  useEffect(() => {
-    if(dataCheck) {
-      fetchWork();
-    } else {
-      setDataCheck(false);
-    }
-  }, [dataCheck]);
+    const handleSearch = (query: string) => {
+        const filteredCars = sampleCars.filter(car => car.name.toLowerCase().includes(query.toLowerCase()));
+        setCars(filteredCars);
+    };
 
-  // handleDelete is an async function that deletes the work data from the api and updates state
-  const handleDelete: MouseEventHandler<HTMLButtonElement> = async (event) => {
-    const workId = Number(event.currentTarget.value);
-    if (!isNaN(workId)) {
-      try {
-        const data = await deleteWork(workId);
-        fetchWork();
-        return data;
-      } catch (error) {
-        console.error('Failed to delete ticket:', error);
-      }
-    }
-  };
+    const handleSelect = (id: number) => {
+        console.log(`Selected car ID: ${id}`);
+        // You can navigate to a detailed view here if desired
+    };
 
-// this renders a list of work items and provides buttons to edit or delete the work items and links for navagating to 
-// different routes
-// It dynamically generates the list   
-  return (
-    <div className="main-list">
-      <div>
-        <Link to='/show-volunteers'>Click here to see Volunteers!</Link>
-      </div>
-      {dataCheck ? (
-        <div className="work-list">
-          {workArray.map((work) => (
-            <div key={work.id} className='work-details'>
-              <h3>{work.name}</h3>
-              <h4>{work.status}</h4>
-              <div>{work.description}</div>
-              <div>{work.assignedVolunteer?.volunteerName}</div>
-              <Link to={'/edit-work'} state={{id: work.id}}>
-                <button>Edit</button>
-              </Link>
-              <button 
-                value={String(work.id)}
-                onClick={handleDelete}
-              >
-                Delete
-              </button>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div>
-          No volunteer work available!
-        </div>
-      )
-    }
-    </div>
-  )
+    return (
+        <Box sx={{
+            position: 'relative',
+            overflow: 'hidden',
+            height: '100vh',
+            width: '100vw',
+            backgroundImage: `url('bg.png')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+        }}>
+            {/* Background Box */}
+            <Box sx={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                zIndex: -1 // Ensure it stays behind other elements
+            }} />
+
+            {/* Main content */}
+            <Header />
+            <Box sx={{
+                display: 'flex',
+                justifyContent: 'center', // Center horizontally
+                alignItems: 'center', // Center vertically
+                flex: 1,
+                paddingTop: '80px', // Space for fixed header
+                paddingBottom: '64px', // Space for fixed footer
+                overflowY: 'auto', // Allow scrolling in this area
+            }}>
+                <Box sx={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    maxWidth: '1200px', // Set a max width for the content
+                    width: '100%', // Full width within max width
+                    height: '100%', // Full height to align frames
+                    justifyContent: 'space-between', // Space between left and right frames
+                }}>
+                    <LeftFrame onSearch={handleSearch} />
+                    <RightFrame cars={cars} onSelect={handleSelect} />
+                </Box>
+            </Box>
+            <Footer />
+        </Box>
+    );
 };
 
 export default MainPage;
