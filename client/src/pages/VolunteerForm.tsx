@@ -1,8 +1,12 @@
+// pulls from client/src/interfaces/VolunteerData.tsx and client/src/interfaces/VolunteerData.tsx
+
 import { ChangeEvent, FormEvent, useState } from "react";
 import { createVolunteer } from "../api/volunteerAPI";
 import { VolunteerData } from "../interfaces/VolunteerData";
 import { useNavigate } from "react-router-dom";
 
+// This function allows the user to add a new volunteer
+// declares the Variable newVolunteer and sets it to undefined
 const VolunteerForm = () => {
   const [newVolunteer, setNewVolunteer] = useState<VolunteerData | undefined>({
     id: null,

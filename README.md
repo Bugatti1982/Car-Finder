@@ -205,3 +205,15 @@ API is functioning
 
 * The Crew watched the REACT Tutorials
 
+### Meeting Notes Oct 9, 2024
+
+* Mattison and Marcellus will do the hook up to front end and will add the Token They will also focus on the add on of the voting system.
+
+* Bee will keep working on design and tweaking it.  He will send files to Rachel and Brandi for Power Point and Video production.
+
+* Rachel is going to work on power Point presentation EMV, React, Helped with Sceema connection and will review the notes of our code to understand better.
+
+* Brandon is taking lead as consulting for all code on back end and will assist Mattison and Marcellus on Front end. He is also shooting a video so that we can add it to the usage area of the readme.
+
+* Brandi will continue mark down, get graphics on videos and video editing and analysis on the overall project to keep us on time.
+
