@@ -72,6 +72,8 @@ Car Finder enables users to easily search for vehicles, compare them side-by-sid
 4. Run the application:  
    `npm start`
 
+   [Installation Video](https://youtu.be/wR1CY2JL0pc?si=Jjt0pAN0Vii134AK)
+
 ## Video Demonstration
 
 _A video demonstration link will be added here once the project is fully implemented._
