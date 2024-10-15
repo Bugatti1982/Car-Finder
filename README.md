@@ -232,3 +232,12 @@ API is functioning
 * Brandi & Bee are meeting at 11:40 am for a design hudle
 
 * Brandon is leading tech consultant on back end to front end connection for Mattison and Marcellus
+
+### Meeting Notes on Oct 14, 2024
+
+* We continued to have trouble connecting front end to back end.  
+
+* Mattison added the code for the connection but we are not sure where the error is coming from.
+
+### Meeting Notes on Oct 15, 2024
+
