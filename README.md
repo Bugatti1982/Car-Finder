@@ -223,6 +223,8 @@ API is functioning
 
 ### Meeting Notes on Oct 10, 2024
 
+* Everyone was in attendance.
+
 * We have front and back connected and working.
 
 * Mattison and Marcellus will have connection established and token inputed by Saturday.  
@@ -235,9 +237,15 @@ API is functioning
 
 ### Meeting Notes on Oct 14, 2024
 
+* Marcellus was missing from meeting.
+
 * We continued to have trouble connecting front end to back end.  
 
 * Mattison added the code for the connection but we are not sure where the error is coming from.
+
+* The group studied up on the token and how to install it.
+
+* 
 
 ### Meeting Notes on Oct 15, 2024
 
