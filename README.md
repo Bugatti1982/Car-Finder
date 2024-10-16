@@ -121,6 +121,7 @@ Marcellus Khanyoo-Moona
 - [Javascript for Kids](https://pepa.holla.cz/wp-content/uploads/2015/11/JavaScript-for-Kids.pdf)
 - [REACT TOKENS](https://www.youtube.com/watch?v=nI8PYZNFtac)
 - [REACT JWT](https://www.npmjs.com/package/react-jwt)
+- [pull JSON information from an API and SQL data](https://chatgpt.com/share/6710327c-a9e8-800f-851b-4a4a1b788c7f)
 
 
 ## Questions
