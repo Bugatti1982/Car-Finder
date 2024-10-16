@@ -3,7 +3,7 @@
 const forceDatabaseRefresh = false;
 
 // imports express and sequelize and routes to index.js file
-import express from 'express';
+import  express from 'express';
 import sequelize from './config/connection.js';
 import routes from './routes/index.js';
 

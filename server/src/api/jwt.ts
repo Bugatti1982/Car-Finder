@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import express from 'express';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import dotenv from 'dotenv';
@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 
-// Middleware to parse JSON bodies in requests
+// Middleware to parse JSON bodies in anys
 app.use(express.json());
 
 interface User {
@@ -22,7 +22,7 @@ const users: User[] = []; // In-memory array to store users (replace with a data
 const SECRET_KEY: string = process.env.JWT_SECRET || 'your_secure_secret';
 
 // Route for user registration
-app.post('/register', async (req: Request, res: Response): Promise<Response> => {
+app.post('/register', async (req: any, res: any): Promise<any> => {
     const { username, password } = req.body;
 
     // Check if the user already exists
@@ -40,7 +40,7 @@ app.post('/register', async (req: Request, res: Response): Promise<Response> => 
 });
 
 // Route for user login
-app.post('/login', async (req: Request, res: Response): Promise<Response> => {
+app.post('/login', async (req: any, res: any): Promise<any> => {
     const { username, password } = req.body;
 
     // Validate credentials 
@@ -48,7 +48,7 @@ app.post('/login', async (req: Request, res: Response): Promise<Response> => {
     if (user && await bcrypt.compare(password, user.password)) {
         // Generate a JWT token
         const token = jwt.sign({ username }, SECRET_KEY, { expiresIn: '1h' }); // Token expires in 1 hour
-        return res.json({ token }); // Send token in response
+        return res.json({ token }); // Send token in any
     } else {
         return res.status(401).json({ error: 'Invalid credentials' });
     }
