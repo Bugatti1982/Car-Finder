@@ -1,11 +1,17 @@
 // src/components/LeftFrame.tsx
+// imports the dependencies
 import React, { useState } from 'react';
 import { Box, TextField, Button, Typography } from '@mui/material';
+import theme from '../theme'; // Ensure correct import path
 
+// defines the expected properties
+// (query: string) => void; is a function that takes a string as an argument and returns void
 interface LeftFrameProps {
     onSearch: (query: string) => void;
 }
 
+// LeftFrame component
+// This is the main container for the LeftFrame component ie the car search form
 const LeftFrame: React.FC<LeftFrameProps> = ({ onSearch }) => {
     const [query, setQuery] = useState('');
 
@@ -15,19 +21,8 @@ const LeftFrame: React.FC<LeftFrameProps> = ({ onSearch }) => {
     };
 
     return (
-        <Box
-            sx={{
-                width: '250px', // Fixed width for the left frame
-                bgcolor: 'rgba(255, 255, 255, 0.8)', // Light background for visibility
-                borderRadius: '8px',
-                padding: '16px',
-                boxShadow: 2,
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '16px',
-            }}
-        >
-            <Typography variant="h6" component="h2" sx={{ fontWeight: 'bold' }}>
+        <Box sx={theme.leftFrame.container}>
+            <Typography variant="h6" component="h2" sx={theme.leftFrame.title}>
                 Search Cars
             </Typography>
             <TextField
@@ -40,7 +35,7 @@ const LeftFrame: React.FC<LeftFrameProps> = ({ onSearch }) => {
             <Button
                 variant="contained"
                 onClick={handleSearch}
-                sx={{ bgcolor: 'primary.main', color: 'white' }}
+                sx={theme.leftFrame.button}
             >
                 Search
             </Button>

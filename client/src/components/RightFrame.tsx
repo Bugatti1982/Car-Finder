@@ -1,57 +1,34 @@
 // src/components/RightFrame.tsx
+// Imports the dependencies
 import React from 'react';
-import { Box, Typography, Card, CardContent, CardMedia, Button } from '@mui/material';
+import { Box } from '@mui/material';
+import Card from './Card';
+import theme from '../theme';
 
+// defines the expected properties
 interface Car {
     id: number;
     name: string;
-    image: string;
     description: string;
 }
 
+// This is the main container for the RightFrame component
 interface RightFrameProps {
     cars: Car[];
     onSelect: (id: number) => void;
 }
-
+// the RightFrame is a functional Component
 const RightFrame: React.FC<RightFrameProps> = ({ cars, onSelect }) => {
+    // The Box component is used as a container for the car cards ie; type, description and view details button 
     return (
-        <Box
-            sx={{
-                flex: 1,
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-                gap: '16px',
-                padding: '16px',
-                bgcolor: 'rgba(255, 255, 255, 0.8)', // Light background for visibility
-                borderRadius: '8px',
-                boxShadow: 2,
-            }}
-        >
+        <Box sx={theme.rightFrame.container}>
             {cars.map(car => (
-                <Card key={car.id} sx={{ maxWidth: 200 }}>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={car.image}
-                        alt={car.name}
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="h6" component="div">
-                            {car.name}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            {car.description}
-                        </Typography>
-                    </CardContent>
-                    <Button
-                        variant="contained"
-                        onClick={() => onSelect(car.id)}
-                        sx={{ bgcolor: 'primary.main', color: 'white' }}
-                    >
-                        View Details
-                    </Button>
-                </Card>
+                <Card
+                    key={car.id}
+                    title={car.name}
+                    description={car.description}
+                    onViewDetails={() => onSelect(car.id)}
+                />
             ))}
         </Box>
     );

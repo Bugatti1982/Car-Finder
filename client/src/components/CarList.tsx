@@ -8,7 +8,6 @@ import { retrieveWorks } from '../api/workAPI'; // Import the API function
 interface Car {
   id: number;
   name: string;
-  image: string;
   description: string;
 }
 
@@ -33,7 +32,6 @@ const CardList: React.FC<CardListProps> = ({ onViewDetails }) => {
           key={car.id}
           title={car.name}
           description={car.description}
-          image={car.image} // Dynamically load image from backend
           onViewDetails={() => onViewDetails(car.id)} // Handle view details
         />
       ))}
