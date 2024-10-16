@@ -245,7 +245,12 @@ API is functioning
 
 * The group studied up on the token and how to install it.
 
-* 
-
 ### Meeting Notes on Oct 15, 2024
 
+* Marcellus added the token
+
+* We tried to get the client to talk to the server.  We will do presentation with the sample data.
+
+* The front end is mostly fixed, the back end is done and then it just isn't talking to each other.
+
+* 
