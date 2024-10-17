@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import LeftFrame from '../components/LeftFrame';
 import CarList from '../components/CarList';
+import theme from '../theme';  // Import the theme
 
 // MainPage component
 const MainPage: React.FC = () => {
@@ -20,45 +21,14 @@ const MainPage: React.FC = () => {
     };
 
     return (
-        <Box sx={{
-            position: 'relative',
-            overflow: 'hidden',
-            height: '100vh',
-            width: '100vw',
-            backgroundImage: `url('bg.png')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-        }}>
-            <Box sx={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                zIndex: -1
-            }} />
+        <Box sx={theme.mainPage.container}>
+            <Box sx={theme.mainPage.backgroundBox} />
 
             <Header />
-            <Box sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                flex: 1,
-                paddingTop: '80px',
-                paddingBottom: '64px',
-                overflowY: 'auto',
-            }}>
-                <Box sx={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    maxWidth: '1200px',
-                    width: '100%',
-                    height: '100%',
-                    justifyContent: 'space-between',
-                }}>
+            <Box sx={theme.mainPage.content}>
+                <Box sx={theme.mainPage.layoutContainer}>
                     <LeftFrame onSearch={handleSearch} />
-                    <CarList onSelect={handleSelect} searchQuery={searchQuery} /> {/* Pass the search query */}
+                    <CarList onSelect={handleSelect} searchQuery={searchQuery} />
                 </Box>
             </Box>
             <Footer />

@@ -11,7 +11,7 @@ const theme = {
             gap: '16px',
             border: '2px solid black',
             backgroundColor: 'rgba(255, 255, 255, 0.9)',
-            boxShadow: '1px 1px 10px 0px black',        
+            boxShadow: '1px 1px 10px 0px black',
         },
         title: {
             fontWeight: 'bold',
@@ -191,6 +191,24 @@ const theme = {
             height: '100%',
             justifyContent: 'space-between',
             gap: '16px',  // Added gap between frames
+        },
+    },
+    errorMessage: { // Adjust error message styles
+        container: {
+            position: 'absolute', // Make it absolute to fill the parent
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'black',
+            color: 'yellow',
+            padding: '16px',
+            borderRadius: '8px',
+            textAlign: 'center',
+            display: 'flex', // Flexbox for centering text
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1, // Ensure it's above other elements
         },
     },
 };

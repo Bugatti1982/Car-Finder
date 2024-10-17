@@ -1,10 +1,9 @@
 // src/components/CarList1.tsx
 import React, { useState, useEffect } from 'react';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Card from './Card';
 import theme from '../theme';
 
-// This defines the expected properties for the CarList component
 interface Car {
     id: number;
     make: string;
@@ -18,7 +17,6 @@ interface CarListProps {
     searchQuery: string;  // Add searchQuery prop
 }
 
-// CarList component
 const CarList: React.FC<CarListProps> = ({ onSelect, searchQuery }) => {
     const [cars, setCars] = useState<Car[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
@@ -55,7 +53,11 @@ const CarList: React.FC<CarListProps> = ({ onSelect, searchQuery }) => {
     }
 
     if (error) {
-        return <div>{error}</div>; // Show error message if there's an error
+        return (
+            <Box sx={theme.errorMessage.container}>
+                <Typography variant="body1">{error}</Typography> {/* Use Typography for consistent text styling */}
+            </Box>
+        ); // Show error message with theme styles
     }
 
     return (
