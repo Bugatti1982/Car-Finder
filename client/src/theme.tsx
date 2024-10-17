@@ -190,12 +190,45 @@ const theme = {
             width: '100%',
             height: '100%',
             justifyContent: 'space-between',
-            gap: '16px',  // Added gap between frames
+            gap: '16px',
         },
     },
-    errorMessage: { // Adjust error message styles
+    login: {
         container: {
-            position: 'absolute', // Make it absolute to fill the parent
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: '100vh',
+            width: '100vw',
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            zIndex: 999,
+        },
+        box: {
+            backgroundColor: 'rgba(255, 255, 255, 0.8)',
+            padding: 3,
+            borderRadius: 2,
+            backdropFilter: 'blur(5px)',
+            boxShadow: 2,
+        },
+        title: {
+            variant: 'h4',
+            mb: 2,
+            color: 'black',
+        },
+        error: {
+            color: 'error.main',
+            mb: 2,
+        },
+        button: {
+            variant: 'contained',
+            color: 'primary',
+        },
+    },
+    errorMessage: {
+        container: {
+            position: 'absolute',
             top: 0,
             left: 0,
             right: 0,
@@ -205,10 +238,10 @@ const theme = {
             padding: '16px',
             borderRadius: '8px',
             textAlign: 'center',
-            display: 'flex', // Flexbox for centering text
+            display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            zIndex: 1, // Ensure it's above other elements
+            zIndex: 1,
         },
     },
 };
