@@ -4,27 +4,19 @@ import { Box } from '@mui/material';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import LeftFrame from '../components/LeftFrame';
-import RightFrame from '../components/RightFrame';
 import CarList from '../components/CarList';
 
-// Sample data for demonstration purposes
-const sampleCars = [
-    { id: 1, name: 'Toyota Camry', image: '/images/test1.jpg', description: 'Reliable sedan with great fuel efficiency.' },
-    { id: 2, name: 'Honda Accord', image: '/images/test2.jpg', description: 'Spacious interior with advanced technology.' },
-    { id: 3, name: 'Tesla Model 3', image: '/images/test3.jpg', description: 'Electric vehicle with cutting-edge features.' }
-];
-
+// MainPage component
 const MainPage: React.FC = () => {
-    const [cars, setCars] = useState(sampleCars);
-
-    const handleSearch = (query: string) => {
-        const filteredCars = sampleCars.filter(car => car.name.toLowerCase().includes(query.toLowerCase()));
-        setCars(filteredCars);
-    };
+    const [searchQuery, setSearchQuery] = useState<string>('');
 
     const handleSelect = (id: number) => {
         console.log(`Selected car ID: ${id}`);
         // You can navigate to a detailed view here if desired
+    };
+
+    const handleSearch = (query: string) => {
+        setSearchQuery(query);  // Update the search query state
     };
 
     return (
@@ -38,42 +30,37 @@ const MainPage: React.FC = () => {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
         }}>
-            {/* Background Box */}
             <Box sx={{
                 position: 'absolute',
                 top: 0,
                 left: 0,
                 right: 0,
                 bottom: 0,
-                zIndex: -1 // Ensure it stays behind other elements
+                zIndex: -1
             }} />
 
-            {/* Main content */}
             <Header />
             <Box sx={{
                 display: 'flex',
-                justifyContent: 'center', // Center horizontally
-                alignItems: 'center', // Center vertically
+                justifyContent: 'center',
+                alignItems: 'center',
                 flex: 1,
-                paddingTop: '80px', // Space for fixed header
-                paddingBottom: '64px', // Space for fixed footer
-                overflowY: 'auto', // Allow scrolling in this area
+                paddingTop: '80px',
+                paddingBottom: '64px',
+                overflowY: 'auto',
             }}>
                 <Box sx={{
                     display: 'flex',
                     flexDirection: 'row',
-                    maxWidth: '1200px', // Set a max width for the content
-                    width: '100%', // Full width within max width
-                    height: '100%', // Full height to align frames
-                    justifyContent: 'space-between', // Space between left and right frames
+                    maxWidth: '1200px',
+                    width: '100%',
+                    height: '100%',
+                    justifyContent: 'space-between',
                 }}>
                     <LeftFrame onSearch={handleSearch} />
-                    <RightFrame cars={cars} onSelect={handleSelect} />
+                    <CarList onSelect={handleSelect} searchQuery={searchQuery} /> {/* Pass the search query */}
                 </Box>
             </Box>
-            <CarList>
-                
-            </CarList>
             <Footer />
         </Box>
     );
