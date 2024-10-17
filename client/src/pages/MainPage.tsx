@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import LeftFrame from '../components/LeftFrame';
 import RightFrame from '../components/RightFrame';
+import CarList from '../components/CarList';
 
 // Sample data for demonstration purposes
 const sampleCars = [
@@ -70,6 +71,9 @@ const MainPage: React.FC = () => {
                     <RightFrame cars={cars} onSelect={handleSelect} />
                 </Box>
             </Box>
+            <CarList>
+                
+            </CarList>
             <Footer />
         </Box>
     );
