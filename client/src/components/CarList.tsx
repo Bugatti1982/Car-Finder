@@ -1,46 +1,77 @@
-import { useState, useEffect} from 'react';
+// src/components/CarList1.tsx
+import React, { useState, useEffect } from 'react';
+import { Box, Typography } from '@mui/material';
 import Card from './Card';
-import { Box } from '@mui/material';
 import theme from '../theme';
-// Define the type for the car data
-const CarList = () => {
-  const [cars, setCars] = useState<any>(null);
 
-  useEffect(() => {
-      try {
-        fetch('/api/cars').then((result) => {
-          return result.json()
-        })
-        .then((data) => {
-          setCars(data);
-          console.log(data)
-        })
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-  }, []);
+interface Car {
+    id: number;
+    make: string;
+    model: string;
+    year: number;
+    price: number;
+}
 
-  if (!cars) {
-    return <div>Loading...</div>;
-  }
+interface CarListProps {
+    onSelect: (id: number) => void;
+    searchQuery: string;  // Add searchQuery prop
+}
 
+const CarList: React.FC<CarListProps> = ({ onSelect, searchQuery }) => {
+    const [cars, setCars] = useState<Car[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<string | null>(null);
 
-  function onViewDetails(_id: any): void {
-    throw new Error('Function not implemented.');
-  }
+    useEffect(() => {
+        const fetchCars = async () => {
+            try {
+                const response = await fetch('/api/cars');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data: Car[] = await response.json();
+                setCars(data);
+            } catch (error: any) {
+                console.error('Error fetching data:', error);
+                setError('Failed to fetch car data.'); // Set error message
+            } finally {
+                setLoading(false);
+            }
+        };
 
-  return (
-    <Box sx={theme.rightFrame.container}>
-      {cars.map((Car: any) => (
-        <Card
-          key={Car.id}
-          title={Car.name}
-          description={Car.description}
-          onViewDetails={() => onViewDetails(Car.id)} // Handle view details
-        />
-      ))}
-    </Box>
-  );
+        fetchCars();
+    }, []);
+
+    // Filter cars whenever searchQuery changes
+    const filteredCars = cars.filter(car => 
+        car.make.toLowerCase().includes(searchQuery.toLowerCase()) || // Filter by make
+        car.model.toLowerCase().includes(searchQuery.toLowerCase()) // Filter by model
+    );
+
+    if (loading) {
+        return <div>Loading...</div>; // Show loading state
+    }
+
+    if (error) {
+        return (
+            <Box sx={theme.errorMessage.container}>
+                <Typography variant="body1">{error}</Typography> {/* Use Typography for consistent text styling */}
+            </Box>
+        ); // Show error message with theme styles
+    }
+
+    return (
+        <Box sx={theme.rightFrame.container}>
+            {filteredCars.map(car => (
+                <Card
+                    key={car.id}
+                    title={`${car.make} ${car.model} (${car.year})`} // Display make and model with year
+                    description={`Price: $${car.price.toLocaleString()}`} // Display price formatted with commas
+                    onViewDetails={() => onSelect(car.id)}
+                />
+            ))}
+        </Box>
+    );
 };
 
 export default CarList;

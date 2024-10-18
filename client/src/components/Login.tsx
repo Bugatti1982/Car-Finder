@@ -1,4 +1,3 @@
-// src/components/Login.tsx
 import React, { useState } from 'react';
 import { Box, Button, TextField, Typography } from '@mui/material';
 import theme from '../theme';
